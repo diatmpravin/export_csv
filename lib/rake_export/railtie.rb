@@ -1,9 +1,7 @@
-module Multitable
-  module Export
-    class Railtie < ::Rails::Railtie
+module ExportCsv
+  class Railtie < ::Rails::Railtie
 	  rake_tasks do
 	    load "rake_export/export_import.rake"
 	  end
-    end
-  end
+   end
 end
