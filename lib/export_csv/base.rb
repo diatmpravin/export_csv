@@ -19,7 +19,7 @@ module ExportCsv
         objects = table.all
         data = CSV.generate(csv_options) do |csv|
           table.column_names.delete_if {|k, v|  escape_att.include? k }
-          csv << table.column_names
+          csv << table.column_names.map {|k| k.gsub(/_/, ' ').capitalize}
           row = Array.new
           objects.each do |obj|
             table.column_names.each do |col|
