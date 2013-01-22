@@ -10,14 +10,15 @@ module ExportCsv
 
     private
 
-    def export_to_csv(filename, content, options = {})
+    def export_to_csv(filename, model, escape_att ,options = {})
       csv_options = {}
       csv_options[:col_sep] = options[:separator] || ','
-      model_dir = Dir['**/models/**/*.rb'].detect {|f| content == File.basename(f, '.*').camelize}
+      model_dir = Dir['**/models/**/*.rb'].detect {|f| model == File.basename(f, '.*').camelize}
       if !model_dir.eql?(nil)
         table = File.basename(model_dir, '.*').camelize.constantize
         objects = table.all
         data = CSV.generate(csv_options) do |csv|
+          table.column_names.delete_if {|k, v|  escape_att.include? k }
           csv << table.column_names
           row = Array.new
           objects.each do |obj|
