@@ -16,6 +16,10 @@ Or install it yourself as:
 
     $ gem install export_csv
 
+## Example
+
+TODO: Write example here
+
 ## Usage
 
 TODO: Write usage instructions here
