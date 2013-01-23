@@ -1,6 +1,6 @@
 # ExportCsv
 
-TODO: Write a gem description
+ExportCsv is a small library intended to simplify the common steps involved with export table data to CSV files. ExportCsv is compatible with recent 1.8 versions of Ruby as well as Ruby 1.9+
 
 ## Installation
 
@@ -15,6 +15,17 @@ And then execute:
 Or install it yourself as:
 
     $ gem install export_csv
+
+## Example
+
+### Example EXPORT CSV File 
+
+    TODO: Write example here
+
+### Example EXPORT CSV File using rake
+
+    TODO: Write example here
+
 
 ## Usage
 
