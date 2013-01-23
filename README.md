@@ -18,9 +18,14 @@ Or install it yourself as:
 
 ## Example
 
-==== Example EXPORT CSV File 
+### Example EXPORT CSV File 
 
 TODO: Write example here
+
+### Example EXPORT CSV File using rake
+
+TODO: Write example here
+
 
 ## Usage
 
