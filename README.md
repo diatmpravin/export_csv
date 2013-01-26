@@ -2,6 +2,8 @@
 
 ExportCsv is a small library intended to simplify the common steps involved with export table data to CSV files. ExportCsv is compatible with recent 1.8 versions of Ruby as well as Ruby 1.9+
 
+#### Additional gem also provide rake db tasks. The command rake db:export_to_csv model=User pulls a database table into a csv.
+
 ## Installation
 
 Add this line to your application's Gemfile:
