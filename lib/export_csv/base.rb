@@ -1,3 +1,5 @@
+require "export_csv/file"
+
 module ExportCsv
   if RUBY_VERSION =~ /1.8/
     require 'fastercsv'
@@ -16,6 +18,8 @@ module ExportCsv
 
       headers = options[:headers]
       csv_options[:headers] = headers.present?
+
+      filename = Extension.ext filename
 
       begin
         model_dir = Dir['**/models/**/*.rb'].detect {|f| model == File.basename(f, '.*').camelize}
