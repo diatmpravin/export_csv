@@ -24,12 +24,23 @@ Or install it yourself as:
 
 ### Example EXPORT CSV File using rake
 
-    TODO: Write example here
-
+    rake db:export_to_csv model=User
 
 ## Usage
 
-TODO: Write usage instructions here
+### Example EXPORT CSV File 
+
+    TODO: Write example here
+
+### Example EXPORT CSV File using rake
+
+    
+If you have a table you want to backup into a csv in the rails db with a model: Model
+
+    rake db:export_to_csv model=Model
+
+the call writes into a csv file Model.csv located in the app root directory
+
 
 ## Contributing
 
