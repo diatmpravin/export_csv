@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ### Example EXPORT CSV File 
 
-    export_to_csv('parent.cshv', 'Parent',["id", "created_at", "updated_at"], options = { :separator=> ','})
+    export_to_csv('parent.csv', 'Parent',["id", "created_at", "updated_at"], options = { :separator=> ',', options = { :separator=> ',', :headers => ["fname","lname"]}})
 
 ### Example EXPORT CSV File using rake
 
@@ -30,7 +30,18 @@ Or install it yourself as:
 
 ### Example EXPORT CSV File 
 
-    TODO: Write example here
+#### That gem provide export_to_csv(filename, model, escape_attributes, [options = {}]) method in your controller.
+
+filename - String, which define output file's name. Gem will append .csv extension if file  does not has extension
+or having other extension other than csv.
+
+model - Model name, Of date you want to export.
+
+escape_attributes - The array of attribute which you want to exclude in csv header and data.
+
+options - Optional argument. Expects it will be some kind of hash. Processed keys:
+   :separator - sets custom separator(by default is ",")
+   :headers - sets header row. Expected array with columns' names
 
 ### Example EXPORT CSV File using rake
 
