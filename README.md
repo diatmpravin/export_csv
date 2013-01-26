@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ### Example EXPORT CSV File 
 
-    TODO: Write example here
+    export_to_csv('parent.cshv', 'Parent',["id", "created_at", "updated_at"], options = { :separator=> ','})
 
 ### Example EXPORT CSV File using rake
 
