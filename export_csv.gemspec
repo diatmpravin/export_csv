@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.version       = ExportCsv::VERSION
   gem.authors       = ["Pravin Mishra"]
   gem.email         = ["diatm.pravin.it.07.27@gmail.com"]
-  gem.description   = %q{ExportCsv is a small library intended to simplify the common steps involved with export table data to CSV files. ExportCsv is compatible with recent 1.8 versions of Ruby as well as Ruby 1.9+}
+  gem.description   = "ExportCsv is a small library intended to simplify the common steps involved with export table data to CSV files. ExportCsv is compatible with recent 1.8 versions of Ruby as well as Ruby 1.9+"
   gem.summary       = %q{Export data from multiple table}
   gem.homepage      = "https://github.com/diatmpravin/export_csv.git"
 
